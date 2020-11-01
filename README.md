@@ -18,7 +18,6 @@ Crea el directorio ya que en los BSD normalmente no esta:
 
 ```
 mkdir .config
-
 ```
 
 
@@ -51,15 +50,15 @@ chmod +x .xinitrc
 **Dependencias**
 
 ```
-pkg install picom youtube_dl feh sxiv musicpd musicpc ncmpcpp firefox telegram-desktop htop xarchiver neofetch leafpad ranger pcmanfm lxappearane zathura zathura-pdf-mupdf neovim mpv
+pkg install py37-pip python37 ncpamixer ImageMagick7 py27-ranger picom youtube_dl feh sxiv musicpd musicpc ncmpcpp firefox telegram-desktop htop xarchiver neofetch leafpad pcmanfm lxappearane zathura zathura-pdf-mupdf neovim mpv
 
+pip install pywal
 ```
 
 **Temas**
 
 ```
 pkg install papirus-icon-theme materia-gtk-theme
-
 ```
 
 
