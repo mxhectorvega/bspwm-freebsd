@@ -1,0 +1,4 @@
+#!/bin/sh
+megas=$(top -n | grep -w "Mem" | awk '{ print $4}' | grep -o '[A-Z]')
+cantidad=$(top -n | grep -w "Mem" | awk '{ print $2+$4 }')
+echo $cantidad$megas

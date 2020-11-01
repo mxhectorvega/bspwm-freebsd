@@ -1,0 +1,4 @@
+#!/bin/sh
+#clima=$(curl -sf "wttr.in/VER?format=1" > /tmp/clima)
+clima=$(awk '{print $2-+-c"°"}' /tmp/clima)
+echo $clima

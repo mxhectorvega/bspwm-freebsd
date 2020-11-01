@@ -1,0 +1,3 @@
+#!/bin/sh
+temp=$(sysctl hw.acpi.thermal.tz0.temperature | awk '{ print $2-.1-C"°" }')
+echo $temp

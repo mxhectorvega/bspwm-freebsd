@@ -1,0 +1,17 @@
+#!/bin/sh
+#wifi=$(ifconfig wlan0 | awk '/ssid/ { print $2}')
+#echo $wifi
+
+WIFI_STATUS=$(ifconfig wlan0 | grep -w "status:" | awk '{ print $2 }')
+SSID=$(ifconfig wlan0 | awk '/ssid/ { print $2}')
+ETH_STATUS=$(ifconfig em0 | grep -w "status:" | awk '{ print $2 }')
+
+if [ "$WIFI_STATUS" = "associated" -a "$ETH_STATUS" = "no" ]
+then
+	printf "${SSID}"
+elif [ "$WIFI_STATUS" = "associated" -a "$ETH_STATUS" = "active" ]
+then
+	printf "Red"
+else
+	printf "N/A"
+fi     

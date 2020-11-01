@@ -1,0 +1,3 @@
+#!/bin/sh
+brillo=$(intel_backlight | awk '{print $4}')
+echo $brillo
