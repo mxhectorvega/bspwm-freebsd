@@ -30,7 +30,7 @@ git clone https://github.com/mxhectorvega/dotfilesfreebsd
 
 cp -R ~/dotfiles/.config/* ~/.config
 
-cp ~/dotfiles/.config/.Xresources ~/.Xresources
+cp ~/dotfiles/.Xresources ~/.Xresources
 ```
 
 
